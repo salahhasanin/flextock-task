@@ -1,0 +1,43 @@
+@mixin fontPorperties($fontWeightValue, $fontSizeValue) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $fontWeightValue;
+  font-size: $fontSizeValue;
+}
+
+.validall {
+  color: red;
+}
+.searchStyle {
+  @include fontPorperties(700, 18px);
+  text-align: center;
+  border: none;
+  padding: 10px;
+  background-image: linear-gradient(#ff754e, #ff9374);
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  &:focus {
+    outline: 0;
+  }
+}
+.example-form {
+  min-width: 300px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+.example-card {
+  max-width: 400px;
+  .peopleName {
+    @include fontPorperties(700, 16px);
+  }
+  p {
+    @include fontPorperties(200, 14px);
+    span {
+      @include fontPorperties(200, 15px);
+      line-height: 1;
+    }
+  }
+}

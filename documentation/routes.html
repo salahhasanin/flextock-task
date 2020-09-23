@@ -27,25 +27,9 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content getting-started">
+               <div class="content routes">
                    <div class="content-data">
 
-<h1 id="flextock-task">Flextock-task</h1>
-<p>Link of deployment on heroku --&gt; <a href="https://flextock-task.herokuapp.com/people">https://flextock-task.herokuapp.com/people</a></p>
-<h2 id="guide-on-how-to-deploy-your-application">guide on how to deploy your application.</h2>
-<p>1- In package.json move (&quot;typescript&quot;: &quot;<del>3.5.3&quot;,&quot;@angular/cli&quot;: &quot;</del>8.3.23&quot;,&quot;@angular/compiler-cli&quot;: &quot;~8.2.14&quot;) from &quot;devDependencies&quot; to &quot;dependencies&quot;</p>
-<p>2- In package.json add &quot;postinstall&quot;: &quot;ng build --prod&quot; in scripts</p>
-<p>3- Create server.js file to be server on heroku &quot; file in project folder root &quot;</p>
-<p>4-In package.json change &quot;start&quot; from &quot;ng serve&quot; to &quot;node server.js&quot; to run server file</p>
-<p>5- Creat git repository
-git init
-git add .
-git commit -am &quot; message &quot;
-git push heroku master</p>
-<h2 id="development-server">Development server</h2>
-<p>Run <code>ng serve</code> for a dev server.</p>
-<h2 id="running-unit-tests">Running unit tests</h2>
-<p>Run <code>ng test</code> to execute the unit tests</p>
 
 
 
@@ -58,8 +42,17 @@ git push heroku master</p>
 
 
 
+<ol class="breadcrumb">
+    <li>Routes</li>
+</ol>
 
+<div id="body-routes"></div>
 
+<script src="./js/libs/d3.v3.min.js"></script>
+<script src="./js/libs/innersvg.js"></script>
+
+<script src="./js/routes/routes_index.js"></script>
+<script src="./js/routes.js"></script>
                    
 
 
@@ -81,8 +74,8 @@ git push heroku master</p>
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
-            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'routes';
+            var COMPODOC_CURRENT_PAGE_URL = 'routes.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
